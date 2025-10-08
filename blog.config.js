@@ -5,6 +5,11 @@ const BLOG = {
   NOTION_PAGE_ID:
     process.env.NOTION_PAGE_ID ||
     '02ab3b8678004aa69e9e415905ef32a5,en:7c1d570661754c8fbc568e00a01fd70e',
+    // 新增Notion认证配置
+  NOTION_TOKEN_V2: process.env.NOTION_TOKEN_V2 || "v03%3AeyJhbGciOiJkaXIiLCJraWQiOiJwcm9kdWN0aW9uOnRva2VuLXYzOjIwMjQtMTEtMDciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIn0..KQpNsfbgVXmpU7-G89Q2tA.L7yaZdYAUuPrw2HRJdfsxiGaf8Ox3l2j3Vtfo4gSfVWaBpsu5VzOBP4BcbYIC6wsqx4jLRE2tYylPob4eKyhOYcCKcttcGhyKmiVl5O9Qiurik6hrz9U7iZpzMVJMg1UfPPPNER0_sbdifxzbOq8KVMYVmlBjbZ7kMLejAns3FXt20OGjkHv9OnJzhdEv_sR_aGru0uo_AvlMEMGJYXO0wGrFUlfrPsm2hubJOwlqGi5QB0AntrQN3PMMZgxSphQdmy0SqKJYTdA72zma7DWgXbMw04b0_M6AiPr3PpZUNv7T-9pxXDhQhbHNzMF9b_-OAZj20QaeRerWLL7kOsxo8I6MppRpBmBEf0Zko8CSIJqSKmIr5KDNulkTg_c8p1JWf61bOWnhr83Bkhb2vk84Pdxa-rV7RWTszdxXclKelE.x4_p3YQvyU1zIeTC8p2-mX_p35MejW6OU4ewy_oWCHI",
+  NOTION_ACTIVE_USER: process.env.NOTION_ACTIVE_USER || "57265734-6afe-4e76-b8d2-742c39482827", // 可选，建议填写你在Notion Cookies中找到的notion_user_id
+  THEME: process.env.NEXT_PUBLIC_THEME || 'simple', // 其余原有配置保持不变...
+  // 以下配置省略（保持原有内容）
   THEME: process.env.NEXT_PUBLIC_THEME || 'simple', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 example,fukasawa,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: process.env.NEXT_PUBLIC_SINCE || 2021, // e.g if leave this empty, current year will be used.
